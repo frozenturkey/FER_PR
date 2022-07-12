@@ -1,14 +1,15 @@
-import './App.css';
-import { BEDDING } from './shared/bedding';
-import { LIGHTING } from './shared/lighting';
-import DetailComponent from './DetailComponent';
-import MainComponent from './MainComponent';
+import "./App.css";
+import { useState } from "react";
+import { BrowserRouter } from "react-router-dom";
+import HomePage from "./containers/Home";
 
 function App() {
   return (
-    <div className="App d-flex">
-      <MainComponent />
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <HomePage />
+      </div>
+    </BrowserRouter>
   );
 }
 
